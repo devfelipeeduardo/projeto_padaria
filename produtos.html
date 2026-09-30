@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossos Produtos | Padaria Villa Quitaúna - Pães, Bolos, Doces e Salgados</title>
+  <meta name="description" content="Conheça nosso cardápio completo de pães de fermentação natural, bolos caseiros, doces finos, salgados crocantes e cafés especiais na Padaria Villa Quitaúna em Osasco.">
+  <meta name="keywords" content="cardapio padaria villa quitauna, paes artesanais osasco, bolos caseiros quitauna, salgados osasco, doces de padaria">
+  <link rel="canonical" href="https://padariavillaquitauna.com.br/produtos.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://padariavillaquitauna.com.br/produtos.html">
+  <meta property="og:title" content="Cardápio de Produtos | Padaria Villa Quitaúna">
+  <meta property="og:description" content="Nossos pães, bolos, doces, salgados e bebidas preparados diariamente com ingredientes selecionados.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+
+  <!-- CSS Dependencies -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="bi bi-geo-alt-fill text-gold me-1"></i> R. Gen. Florêncio, 1436 - Quitaúna, Osasco - SP
+        <span class="ms-3 me-3">|</span>
+        <i class="bi bi-clock-fill text-gold me-1"></i> Seg a Sáb: 06h às 21h | Dom: 07h às 20h
+      </div>
+      <div>
+        <a href="tel:1136082040" class="me-3"><i class="bi bi-telephone-fill me-1"></i> (11) 3608-2040</a>
+        <a href="https://instagram.com/padariavillaquitauna" target="_blank" rel="noopener"><i class="bi bi-instagram me-1"></i> @padariavillaquitauna</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a class="navbar-brand navbar-brand-custom" href="index.html">
+          <div class="brand-icon">
+            <i class="bi bi-basket2-fill"></i>
+          </div>
+          <div>
+            <span class="brand-text-title">Villa Quitaúna</span>
+            <span class="brand-text-subtitle">Padaria & Confeitaria</span>
+          </div>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Menu de Navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom active" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="historia.html">Nossa História</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="qualidade.html">Qualidade</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="contato.html">Contato</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2">
+            <a href="https://wa.me/5511987654321?text=Olá!%20Vim%20pelo%20site%20da%20Padaria%20Villa%20Quitaúna." target="_blank" rel="noopener" class="btn btn-primary-custom">
+              <i class="bi bi-whatsapp"></i> Fale Conosco
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Nossos Produtos</h1>
+      <p>Sabor, carinho e ingredientes selecionados em cada uma das nossas receitas artesanais.</p>
+      <div class="breadcrumb-custom">
+        <a href="index.html"><i class="bi bi-house-door-fill"></i> Início</a>
+        <span>/</span>
+        <span class="text-white">Produtos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Main Catalog (Vue.js App) -->
+  <section id="app-products">
+    <div class="container">
+      
+      <!-- Category Filter Tabs & Search Bar -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8">
+          <div class="input-group mb-4 shadow-sm rounded-pill overflow-hidden border">
+            <span class="input-group-text bg-white border-0 ps-3 text-muted"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control border-0 py-2 shadow-none" placeholder="Buscar por produto (ex: Pão Francês, Coxinha, Croissant)..." v-model="searchQuery">
+            <button class="btn btn-primary-custom px-4" type="button" @click="searchQuery = ''" v-if="searchQuery">Limpar</button>
+          </div>
+
+          <div class="filter-btn-group">
+            <button :class="['filter-btn', { active: selectedCategory === 'todos' }]" @click="setCategory('todos')">
+              <i class="bi bi-grid-fill me-1"></i> Todos
+            </button>
+            <button :class="['filter-btn', { active: selectedCategory === 'paes' }]" @click="setCategory('paes')">
+              <i class="bi bi-bread-slice me-1"></i> Pães
+            </button>
+            <button :class="['filter-btn', { active: selectedCategory === 'bolos' }]" @click="setCategory('bolos')">
+              <i class="bi bi-cake2-fill me-1"></i> Bolos
+            </button>
+            <button :class="['filter-btn', { active: selectedCategory === 'doces' }]" @click="setCategory('doces')">
+              <i class="bi bi-cookie me-1"></i> Doces
+            </button>
+            <button :class="['filter-btn', { active: selectedCategory === 'salgados' }]" @click="setCategory('salgados')">
+              <i class="bi bi-egg-fried me-1"></i> Salgados
+            </button>
+            <button :class="['filter-btn', { active: selectedCategory === 'bebidas' }]" @click="setCategory('bebidas')">
+              <i class="bi bi-cup-hot-fill me-1"></i> Café & Bebidas
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- No Results State -->
+      <div v-if="filteredProducts.length === 0" class="text-center py-5">
+        <i class="bi bi-emoji-frown text-muted display-4 mb-3"></i>
+        <h4>Nenhum produto encontrado</h4>
+        <p class="text-muted">Tente buscar por outro termo ou selecione a categoria "Todos".</p>
+        <button class="btn btn-outline-custom mt-2" @click="searchQuery = ''; selectedCategory = 'todos'">Ver todos os produtos</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" v-for="product in filteredProducts" :key="product.id">
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img :src="product.img" :alt="product.name" class="product-img" loading="lazy">
+              <div class="product-badge-overlay">
+                <span :class="product.badgeClass">{{ product.badge }}</span>
+              </div>
+            </div>
+            <div class="product-body">
+              <span class="text-uppercase text-muted fw-bold fs-8 mb-1">{{ product.categoryLabel }}</span>
+              <h5 class="product-title">{{ product.name }}</h5>
+              <p class="product-desc">{{ product.desc }}</p>
+              <div class="product-footer">
+                <button @click="openProductModal(product)" class="btn btn-sm btn-outline-custom w-100">
+                  <i class="bi bi-info-circle"></i> Ver Ingredientes e Detalhes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail Modal -->
+      <div class="modal fade" id="productDetailModal" tabindex="-1" aria-hidden="true" v-if="selectedProductModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-content-custom">
+            <div class="modal-header modal-header-custom d-flex justify-content-between align-items-center">
+              <h5 class="modal-title font-serif fw-bold mb-0">{{ selectedProductModal.name }}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body p-4">
+              <img :src="selectedProductModal.img" :alt="selectedProductModal.name" class="img-fluid rounded-3 mb-3 w-100" style="max-height: 250px; object-fit: cover;">
+              <span :class="selectedProductModal.badgeClass" class="mb-2">{{ selectedProductModal.badge }}</span>
+              <p class="mt-2 text-dark fs-6">{{ selectedProductModal.desc }}</p>
+              <div class="p-3 bg-light rounded-3 border mt-3">
+                <strong class="d-block text-primary mb-1"><i class="bi bi-journal-text me-1"></i> Ingredientes & Preparo:</strong>
+                <small class="text-muted">{{ selectedProductModal.ingredients }}</small>
+              </div>
+            </div>
+            <div class="modal-footer bg-light border-top-0">
+              <a :href="'https://wa.me/5511987654321?text=Olá!%20Tenho%20interesse%20no%20produto:%20' + encodeURIComponent(selectedProductModal.name)" target="_blank" class="btn btn-whatsapp w-100">
+                <i class="bi bi-whatsapp me-1"></i> Encomendar ou Consultar no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Special Orders Info Banner -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="p-4 p-md-5 rounded-4 border bg-white shadow-sm d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4">
+        <div>
+          <span class="badge-tag badge-olive mb-2"><i class="bi bi-gift-fill"></i> Festas & Eventos</span>
+          <h3 class="font-serif fw-bold text-primary mb-2">Aceitamos Encomendas Especiais!</h3>
+          <p class="text-muted mb-0 max-w-600">
+            Monte kits de café da manhã para empresas, mini salgados para festas, bolos decorados e tábuas de pães com patês artesanais para o seu evento.
+          </p>
+        </div>
+        <a href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20encomenda." target="_blank" class="btn btn-primary-custom flex-shrink-0 text-nowrap">
+          <i class="bi bi-whatsapp"></i> Faça um Orçamento Sem Compromisso
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="py-5">
+    <div class="container">
+      <div class="cta-banner text-center">
+        <h2 class="cta-title">Quer levar o melhor pão da região para casa?</h2>
+        <p class="cta-text">
+          Nossa equipe aguarda sua visita de braços abertos na R. Gen. Florêncio, 1436 em Osasco.
+        </p>
+        <a href="contato.html" class="btn btn-whatsapp btn-lg px-5 py-3 rounded-pill fs-6">
+          <i class="bi bi-geo-alt-fill"></i> Ver Endereço e Como Chegar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-icon" style="width:38px; height:38px; font-size:1.1rem;">
+              <i class="bi bi-basket2-fill"></i>
+            </div>
+            <span class="font-serif fw-bold fs-4 text-white">Padaria Villa Quitaúna</span>
+          </div>
+          <p class="fs-7 text-muted">
+            Tradição, carinho e o autêntico sabor artesanal no coração de Osasco. Pães quentinhos, bolos, doces finos, salgados e cafés especiais todos os dias.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://instagram.com/padariavillaquitauna" target="_blank" aria-label="Instagram" class="social-icon-btn"><i class="bi bi-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon-btn"><i class="bi bi-facebook"></i></a>
+            <a href="https://wa.me/5511987654321" target="_blank" aria-label="WhatsApp" class="social-icon-btn"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-title">Navegação</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Nossos Produtos</a></li>
+            <li><a href="historia.html">Nossa História</a></li>
+            <li><a href="qualidade.html">Garantia de Qualidade</a></li>
+            <li><a href="contato.html">Localização & Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contato</h5>
+          <p class="fs-7 mb-2"><i class="bi bi-geo-alt-fill text-gold me-2"></i> R. Gen. Florêncio, 1436 - Villa Quitauna, Osasco - SP</p>
+          <p class="fs-7 mb-2"><i class="bi bi-telephone-fill text-gold me-2"></i> (11) 3608-2040</p>
+          <p class="fs-7 mb-2"><i class="bi bi-whatsapp text-gold me-2"></i> (11) 98765-4321</p>
+          <p class="fs-7"><i class="bi bi-envelope-fill text-gold me-2"></i> contato@padariavillaquitauna.com.br</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Horário de Atendimento</h5>
+          <p class="fs-7 mb-1 fw-bold text-white">Segunda a Sábado:</p>
+          <p class="fs-7 mb-3 text-gold">06:00 às 21:00</p>
+          <p class="fs-7 mb-1 fw-bold text-white">Domingos e Feriados:</p>
+          <p class="fs-7 text-gold">07:00 às 20:00</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">© 2026 Padaria Villa Quitaúna. Todos os direitos reservados.</p>
+        <p class="mb-0 fs-8">Desenvolvido com carinho para o bairro de Villa Quitaúna, Osasco.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Padaria%20Villa%20Quitaúna." class="float-whatsapp" target="_blank" rel="noopener" aria-label="Fale Conosco no WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- JS Dependencies -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

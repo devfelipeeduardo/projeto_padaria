@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://padariavillaquitauna.com.br/sitemap.xml

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padaria Villa Quitaúna | Pães Artesanais, Cafés e Doces em Osasco - SP</title>
+  <meta name="description" content="Padaria Villa Quitaúna em Osasco - SP. Pães frescos, fermentação natural, doces artesanais, salgados e cafés especiais. Venha saborear a verdadeira tradição em Quitaúna!">
+  <meta name="keywords" content="padaria villa quitauna, padaria osasco, pao artesanal osasco, quitauna osasco, cafe da manha osasco, fermentacao natural">
+  <link rel="canonical" href="https://padariavillaquitauna.com.br/">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://padariavillaquitauna.com.br/">
+  <meta property="og:title" content="Padaria Villa Quitaúna | Tradição e Sabor Artesanal em Osasco">
+  <meta property="og:description" content="Feito com carinho, servido com sabor. Venha provar nossos pães fresquinhos, bolos e cafés especiais na R. Gen. Florêncio, 1436 - Osasco.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+
+  <!-- CSS Dependencies (Bootstrap 5 & Icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org JSON-LD Structured Data for Local Bakery -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Padaria Villa Quitaúna",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "@id": "https://padariavillaquitauna.com.br",
+    "url": "https://padariavillaquitauna.com.br",
+    "telephone": "+551136082040",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Gen. Florêncio, 1436",
+      "addressLocality": "Osasco",
+      "addressRegion": "SP",
+      "postalCode": "06186-150",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.5325,
+      "longitude": -46.7918
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "06:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "07:00",
+        "closes": "20:00"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Informational Bar -->
+  <div class="top-bar d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="bi bi-geo-alt-fill text-gold me-1"></i> R. Gen. Florêncio, 1436 - Quitaúna, Osasco - SP
+        <span class="ms-3 me-3">|</span>
+        <i class="bi bi-clock-fill text-gold me-1"></i> Seg a Sáb: 06h às 21h | Dom: 07h às 20h
+      </div>
+      <div>
+        <a href="tel:1136082040" class="me-3"><i class="bi bi-telephone-fill me-1"></i> (11) 3608-2040</a>
+        <a href="https://instagram.com/padariavillaquitauna" target="_blank" rel="noopener"><i class="bi bi-instagram me-1"></i> @padariavillaquitauna</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Fixed Navigation -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a class="navbar-brand navbar-brand-custom" href="index.html">
+          <div class="brand-icon">
+            <i class="bi bi-basket2-fill"></i>
+          </div>
+          <div>
+            <span class="brand-text-title">Villa Quitaúna</span>
+            <span class="brand-text-subtitle">Padaria & Confeitaria</span>
+          </div>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Menu de Navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom active" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="historia.html">Nossa História</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="qualidade.html">Qualidade</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="contato.html">Contato</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2">
+            <a href="https://wa.me/5511987654321?text=Olá!%20Vim%20pelo%20site%20da%20Padaria%20Villa%20Quitaúna." target="_blank" rel="noopener" class="btn btn-primary-custom">
+              <i class="bi bi-whatsapp"></i> Fale Conosco
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay-pattern"></div>
+    <div class="container position-relative z-2">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="hero-badge">
+            <i class="bi bi-award-fill"></i> Tradicional & Artesanal em Osasco
+          </div>
+          <h1 class="hero-title">
+            Feito com carinho, <span>servido com sabor.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Tradição, qualidade e aquele sabor de padaria que faz parte da nossa história. Pães quentinhos a toda hora, doces finos, salgados e um café passado no capricho.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="produtos.html" class="btn btn-primary-custom btn-lg">
+              <i class="bi bi-egg-fried"></i> Conheça nossos produtos
+            </a>
+            <a href="contato.html" class="btn btn-outline-light rounded-pill px-4 py-3 font-semibold fw-bold">
+              <i class="bi bi-geo-alt-fill"></i> Fale conosco
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 d-none d-lg-block mt-5 mt-lg-0">
+          <div class="hero-floating-card ms-auto">
+            <div class="brand-icon flex-shrink-0" style="background-color: var(--color-bg-warm); color: var(--color-caramel);">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 fw-bold text-dark">Pão Quentinho Traz Sorte</h6>
+              <p class="mb-0 text-muted fs-7">Fornadas de pão francês saindo a cada 30 minutos na Villa Quitaúna.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre A Padaria / Highlights -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="about-img-frame">
+            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1000&q=80" alt="Produção artesanal de pães na Padaria Villa Quitaúna em Osasco" class="img-fluid rounded-4 shadow" loading="lazy">
+            <div class="experience-badge d-none d-md-block">
+              <span class="d-block h2 font-serif fw-bold mb-0">100%</span>
+              <span class="fs-7 text-uppercase fw-semibold">Artesanal</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <span class="section-subtitle">Aconchego & Tradição</span>
+          <h2 class="section-title">Bem-vindo à Padaria Villa Quitaúna</h2>
+          <p class="fs-6 mb-4">
+            Usa-se farinha de primeira, fermentação pacienciosa e o carinho das velhas receitas de família. Na Padaria Villa Quitaúna, acreditamos que cada detalhe transforma um simples café da manhã num momento especial.
+          </p>
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3 p-3 bg-white rounded-3 border">
+                <i class="bi bi-check-circle-fill text-success fs-3"></i>
+                <div>
+                  <h6 class="mb-0 fw-bold">Ingredientes Selecionados</h6>
+                  <small class="text-muted">Insumos de primeira linha</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3 p-3 bg-white rounded-3 border">
+                <i class="bi bi-check-circle-fill text-success fs-3"></i>
+                <div>
+                  <h6 class="mb-0 fw-bold">Atendimento Acolhedor</h6>
+                  <small class="text-muted">Proximidade e sorriso sincero</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="historia.html" class="btn btn-secondary-custom">
+            Conheça Nossa Trajetória <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section>
+    <div class="container">
+      <div class="text-center section-title-wrapper">
+        <span class="section-subtitle">Por que escolher a Villa Quitaúna</span>
+        <h2 class="section-title">Nossos Diferenciais</h2>
+        <p class="section-description">Cuidamos de cada etapa da preparação para que você sinta o sabor autêntico de uma padaria artesanal de verdade.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-hand-thumbs-up-fill"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Produção Artesanal</h5>
+            <p class="mb-0 text-muted fs-7">Processos tradicionais e fermentação lenta garantem sabor, aroma inconfundível e textura perfeita.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-stars"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Ingredientes Selecionados</h5>
+            <p class="mb-0 text-muted fs-7">Farinhas de alta qualidade, manteiga pura e frutas frescas escolhidas diariamente.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-fire"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Produtos Frescos</h5>
+            <p class="mb-0 text-muted fs-7">Múltiplas fornadas ao longo do dia para garantir pães e salgados sempre quentinhos.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="bi bi-heart-fill"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Atendimento Acolhedor</h5>
+            <p class="mb-0 text-muted fs-7">Um ambiente familiar e uma equipe sempre pronta para receber você com carinho e atenção.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section with Vue -->
+  <section class="bg-light" id="app-featured-products">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end section-title-wrapper mb-4">
+        <div>
+          <span class="section-subtitle">Nossas Delícias</span>
+          <h2 class="section-title mb-0">Destaques da Nossa Vitrine</h2>
+        </div>
+        <a href="produtos.html" class="btn btn-outline-custom mt-3 mt-md-0">
+          Ver Cardápio Completo <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" v-for="product in featuredProducts" :key="product.id">
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img :src="product.img" :alt="product.name" class="product-img" loading="lazy">
+              <div class="product-badge-overlay">
+                <span :class="product.badgeClass">{{ product.badge }}</span>
+              </div>
+            </div>
+            <div class="product-body">
+              <span class="text-uppercase text-muted fw-bold fs-8 mb-1">{{ product.categoryLabel }}</span>
+              <h5 class="product-title">{{ product.name }}</h5>
+              <p class="product-desc">{{ product.desc }}</p>
+              <div class="product-footer">
+                <button @click="openProductModal(product)" class="btn btn-sm btn-outline-custom w-100">
+                  <i class="bi bi-info-circle"></i> Ver Detalhes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail Modal -->
+      <div class="modal fade" id="productDetailModal" tabindex="-1" aria-hidden="true" v-if="selectedProductModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-content-custom">
+            <div class="modal-header modal-header-custom d-flex justify-content-between align-items-center">
+              <h5 class="modal-title font-serif fw-bold mb-0">{{ selectedProductModal.name }}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body p-4">
+              <img :src="selectedProductModal.img" :alt="selectedProductModal.name" class="img-fluid rounded-3 mb-3 w-100" style="max-height: 250px; object-fit: cover;">
+              <span :class="selectedProductModal.badgeClass" class="mb-2">{{ selectedProductModal.badge }}</span>
+              <p class="mt-2 text-dark fs-6">{{ selectedProductModal.desc }}</p>
+              <div class="p-3 bg-light rounded-3 border mt-3">
+                <strong class="d-block text-primary mb-1"><i class="bi bi-journal-text me-1"></i> Ingredientes Selecionados:</strong>
+                <small class="text-muted">{{ selectedProductModal.ingredients }}</small>
+              </div>
+            </div>
+            <div class="modal-footer bg-light border-top-0">
+              <a :href="'https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20saber%20sobre%20o%20item:%20' + encodeURIComponent(selectedProductModal.name)" target="_blank" class="btn btn-whatsapp w-100">
+                <i class="bi bi-whatsapp me-1"></i> Encomendar pelo WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Nossa História Teaser -->
+  <section class="position-relative overflow-hidden">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <span class="section-subtitle">Momento Especial</span>
+          <h2 class="section-title">Uma trajetória construída com paixão e afeto</h2>
+          <blockquote class="blockquote font-serif fs-5 text-primary fst-italic border-start border-4 border-caramel ps-3 my-3">
+            "Há anos, transformamos ingredientes simples em momentos especiais. Nossa história começou com o desejo de oferecer produtos frescos, feitos com cuidado e com o mesmo sabor das boas lembranças."
+          </blockquote>
+          <p class="text-muted">
+            Desde a fundação no bairro Villa Quitaúna em Osasco, nossa meta sempre foi acolher os vizinhos e clientes como se fossem parte da nossa família. Cada fornada é acompanhada de perto para entregar a crocância e o sabor inconfundíveis.
+          </p>
+          <a href="historia.html" class="btn btn-primary-custom mt-2">
+            Leia Nossa História Completa
+          </a>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="row g-3">
+            <div class="col-6">
+              <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=600&q=80" alt="Doces e folheados Padaria Villa Quitauna" class="img-fluid rounded-4 shadow-sm" loading="lazy">
+            </div>
+            <div class="col-6 mt-4">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Café fresquinho Padaria Villa Quitauna" class="img-fluid rounded-4 shadow-sm" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria Preview com Vue Modal -->
+  <section class="bg-light" id="app-gallery">
+    <div class="container">
+      <div class="text-center section-title-wrapper">
+        <span class="section-subtitle">Sinta o Aroma</span>
+        <h2 class="section-title">Galeria de Momentos</h2>
+        <p class="section-description">Confira um pouco da nossa rotina, nossos pães, doces e o aconchego da nossa loja física.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div v-for="item in galleryItems" :key="item.id" class="gallery-item" @click="openGalleryModal(item)">
+          <img :src="item.img" :alt="item.title" loading="lazy">
+          <div class="gallery-overlay">
+            <h6 class="mb-0 font-serif fw-bold">{{ item.title }}</h6>
+            <small class="text-gold"><i class="bi bi-zoom-in"></i> Clique para expandir</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox Modal -->
+      <div class="modal fade" id="galleryLightBoxModal" tabindex="-1" aria-hidden="true" v-if="activeModalImage">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0 text-end">
+              <button type="button" class="btn-close btn-close-white mb-2" data-bs-dismiss="modal" aria-label="Fechar"></button>
+              <img :src="activeModalImage.img" :alt="activeModalImage.title" class="img-fluid rounded-4 shadow-lg w-100">
+              <div class="p-3 bg-dark text-white rounded-bottom-4 text-center">
+                <h5 class="mb-0 font-serif">{{ activeModalImage.title }}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section>
+    <div class="container">
+      <div class="text-center section-title-wrapper">
+        <span class="section-subtitle">Opinião de Quem Ama</span>
+        <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+        <p class="section-description">A satisfação e o carinho dos nossos freqüentadores diários são nossa maior recompensa.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-quote">“</div>
+              <p class="testimonial-text">
+                "O melhor pão de fermentação natural de Osasco! O atendimento é impecável e o café sempre vem no ponto perfeito. Indico de olhos fechados!"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Depoimento Mariana Santos" class="author-avatar">
+              <div>
+                <h6 class="author-name">Mariana Santos</h6>
+                <span class="author-role">Cliente Frequente</span>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-quote">“</div>
+              <p class="testimonial-text">
+                "A coxinha com catupiry e o bolo de cenoura são divinos. Faço questão de passar na Villa Quitaúna todas as manhãs antes do trabalho!"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Depoimento Carlos Eduardo" class="author-avatar">
+              <div>
+                <h6 class="author-name">Carlos Eduardo</h6>
+                <span class="author-role">Morador de Quitaúna</span>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-quote">“</div>
+              <p class="testimonial-text">
+                "Ambiente super limpo, agradável e acolhedor. Os salgados são fofinhos e as tortas doces encantam a família inteira nos finais de semana."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Depoimento Fernanda Lima" class="author-avatar">
+              <div>
+                <h6 class="author-name">Fernanda Lima</h6>
+                <span class="author-role">Cliente de Osasco</span>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização e Contato Section -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-5">
+          <div class="contact-info-card">
+            <span class="section-subtitle">Venha nos Visitar</span>
+            <h3 class="font-serif fw-bold mb-4">Localização & Horários</h3>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Endereço</h6>
+                <p class="mb-0 text-muted fs-7">R. Gen. Florêncio, 1436 - Villa Quitauna, Osasco - SP, 06186-150</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="bi bi-clock-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Horário de Funcionamento</h6>
+                <p class="mb-0 text-muted fs-7">Segunda a Sábado: 06:00h às 21:00h<br>Domingos e Feriados: 07:00h às 20:00h</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Contatos</h6>
+                <p class="mb-0 text-muted fs-7">
+                  Telefone: (11) 3608-2040<br>
+                  WhatsApp: (11) 98765-4321<br>
+                  Instagram: @padariavillaquitauna
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="map-container">
+            <!-- Google Maps Embed centered on R. Gen. Florêncio, 1436 Osasco -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.689258925184!2d-46.7940121!3d-23.5329061!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce82be8222b3b7%3A0x6b290df627e7ff52!2sR.%20Gen.%20Flor%C3%AAncio%2C%201436%20-%20Vila%20Quita%C3%BAna%2C%20Osasco%20-%20SP%2C%2006186-150!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Padaria Villa Quitauna"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="py-5">
+    <div class="container">
+      <div class="cta-banner text-center">
+        <span class="hero-badge mb-3">
+          <i class="bi bi-cup-hot-fill"></i> Sabor Sem Igual
+        </span>
+        <h2 class="cta-title">Seu próximo café começa aqui.</h2>
+        <p class="cta-text">
+          Passe para tomar um café, levar aquele pão fresquinho para casa ou simplesmente matar a saudade de um bom sabor.
+        </p>
+        <a href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20ou%20tirar%20uma%20dúvida." target="_blank" class="btn btn-whatsapp btn-lg px-5 py-3 rounded-pill fs-6">
+          <i class="bi bi-whatsapp"></i> Fale conosco pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-icon" style="width:38px; height:38px; font-size:1.1rem;">
+              <i class="bi bi-basket2-fill"></i>
+            </div>
+            <span class="font-serif fw-bold fs-4 text-white">Padaria Villa Quitaúna</span>
+          </div>
+          <p class="fs-7 text-muted">
+            Tradição, carinho e o autêntico sabor artesanal no coração de Osasco. Pães quentinhos, bolos, doces finos, salgados e cafés especiais todos os dias.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://instagram.com/padariavillaquitauna" target="_blank" aria-label="Instagram" class="social-icon-btn"><i class="bi bi-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon-btn"><i class="bi bi-facebook"></i></a>
+            <a href="https://wa.me/5511987654321" target="_blank" aria-label="WhatsApp" class="social-icon-btn"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-title">Navegação</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Nossos Produtos</a></li>
+            <li><a href="historia.html">Nossa História</a></li>
+            <li><a href="qualidade.html">Garantia de Qualidade</a></li>
+            <li><a href="contato.html">Localização & Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contato</h5>
+          <p class="fs-7 mb-2"><i class="bi bi-geo-alt-fill text-gold me-2"></i> R. Gen. Florêncio, 1436 - Villa Quitauna, Osasco - SP</p>
+          <p class="fs-7 mb-2"><i class="bi bi-telephone-fill text-gold me-2"></i> (11) 3608-2040</p>
+          <p class="fs-7 mb-2"><i class="bi bi-whatsapp text-gold me-2"></i> (11) 98765-4321</p>
+          <p class="fs-7"><i class="bi bi-envelope-fill text-gold me-2"></i> contato@padariavillaquitauna.com.br</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Horário de Atendimento</h5>
+          <p class="fs-7 mb-1 fw-bold text-white">Segunda a Sábado:</p>
+          <p class="fs-7 mb-3 text-gold">06:00 às 21:00</p>
+          <p class="fs-7 mb-1 fw-bold text-white">Domingos e Feriados:</p>
+          <p class="fs-7 text-gold">07:00 às 20:00</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">© 2026 Padaria Villa Quitaúna. Todos os direitos reservados.</p>
+        <p class="mb-0 fs-8">Desenvolvido com carinho para o bairro de Villa Quitaúna, Osasco.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Padaria%20Villa%20Quitaúna." class="float-whatsapp" target="_blank" rel="noopener" aria-label="Fale Conosco no WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- JS Dependencies (Vue 3 CDN + Bootstrap 5 JS Bundle + Custom Script) -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
